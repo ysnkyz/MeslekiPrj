@@ -1,0 +1,300 @@
+﻿
+@{
+    ViewBag.Title = "YAKE-Shop";
+    Layout = "~/Views/Shared/_Layout1.cshtml";
+}
+
+<style>
+    .aa-browse-btn {
+        display: inline-block;
+        font-size: 16px;
+        padding: 12px 18px;
+        color: #a94442;
+    }
+</style>
+<!-- Start slider -->
+<section id="aa-slider">
+    <div class="aa-slider-area">
+        <div id="sequence" class="seq">
+            <div class="seq-screen">
+                <ul class="seq-canvas">
+
+                    <!-- single slide item -->
+                    @foreach (var item in @ViewBag.Slider)
+                    {
+                        <li>
+                            <div class="seq-model">
+                                <img data-seq src="@item.ImageURL" alt="@item.AltText" />
+                            </div>
+                            <div class="seq-title">
+                                @*<span data-seq>@item.OfferTag</span>*@
+                                <h2 data-seq>@item.Title</h2>
+                                @*<p data-seq>@item.Description</p>
+                                    <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">@item.BtnText</a>*@
+                            </div>
+                        </li>
+                    }
+                    <!-- end single slide item -->
+
+                </ul>
+            </div>
+            <!-- slider navigation btn -->
+            <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
+                <a type="button" href="" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
+                <a type="button" href="" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
+            </fieldset>
+        </div>
+    </div>
+
+
+
+</section>
+<!-- / slider -->
+
+<section id="aa-product-category" style="background-image: url(/Images/dark4.jpg)">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-8 col-md-push-3">
+                <div class="aa-product-catg-content">
+
+                    <div class="aa-product-catg-body">
+                        <ul class="aa-product-catg">
+
+
+
+                            <li>
+                                <figure>
+                                    <a class="aa-product-img" href="/Product1/ViewDetails/1">
+                                        <img src="/Images/ıphone12.jpg" alt="" class="img-fluid img-thumbnail">
+                                    </a>
+                                    <figcaption>
+                                        <h4 class="aa-product-title"><a href="#" style="color: aliceblue;">iPhone 12 Pro (128 GB)</a></h4>
+
+                                    </figcaption>
+
+                                </figure>
+                                <div class="aa-product-hvr-content">
+                                    <a href="/Product1/ViewDetails/1" title="Detayları Görüntüle" data-toggle="tooltip" data-placement="top"><span class="fa fa-info"></span></a>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <figure>
+                                    <a class="aa-product-img" href="/Product1/ViewDetails/2">
+                                        <img src="/Images/19cd2f36-4d47-4876-aa5a-de49720b423e_test.jpg" alt="" class="img-fluid img-thumbnail">
+                                    </a>
+                                    <figcaption>
+                                        <h4 class="aa-product-title"><a href="#" style="color: aliceblue;">iPhone 11 (128 GB)</a></h4>
+
+                                    </figcaption>
+
+                                </figure>
+                                <div class="aa-product-hvr-content">
+
+                                    <a href="/Product1/ViewDetails/2" title="Detayları Görüntüle" data-toggle="tooltip" data-placement="top"><span class="fa fa-info"></span></a>
+                                </div>
+                            </li>
+
+
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</section>
+
+<section id="aa-product-category" style="background-image: url(/Images/dark4.jpg)">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-8 col-md-push-3">
+                <div class="aa-product-catg-content">
+
+                    <div class="aa-product-catg-body">
+                        <ul class="aa-product-catg">
+
+
+
+                            <li>
+                                <figure>
+                                    <a class="aa-product-img" href="/Product1/ViewDetails/3">
+                                        <img src="/Images/set1.png" alt="" class="img-fluid img-thumbnail">
+                                    </a>
+                                    <figcaption>
+                                        <h4 class="aa-product-title"><a href="#" style="color: aliceblue;">Vestel Yakut Inox Beyaz Eşya Paketi</a></h4>
+
+                                    </figcaption>
+
+                                </figure>
+                                <div class="aa-product-hvr-content">
+                                    <a href="/Product1/ViewDetails/3" title="Detayları Görüntüle" data-toggle="tooltip" data-placement="top"><span class="fa fa-info"></span></a>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <figure>
+                                    <a class="aa-product-img" href="/Product1/ViewDetails/4">
+                                        <img src="/Images/set2.png" alt="" class="img-fluid img-thumbnail">
+                                    </a>
+                                    <figcaption>
+                                        <h4 class="aa-product-title"><a href="#" style="color: aliceblue;">Arçelik Atria Delüxe Paket</a></h4>
+
+                                    </figcaption>
+
+                                </figure>
+                                <div class="aa-product-hvr-content">
+
+                                    <a href="/Product1/ViewDetails/4" title="Detayları Görüntüle" data-toggle="tooltip" data-placement="top"><span class="fa fa-info"></span></a>
+                                </div>
+                            </li>
+
+
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+<section id="aa-product-category" style="background-image: url(/Images/dark4.jpg)">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-8 col-md-push-3">
+                <div class="aa-product-catg-content">
+
+                    <div class="aa-product-catg-body">
+                        <ul class="aa-product-catg">
+
+
+
+                            <li>
+                                <figure>
+                                    <a class="aa-product-img" href="/Product1/ViewDetails/5">
+                                        <img src="/Images/1b685082-1d5c-4287-81e5-9241c5f3f2e0.jpg" alt="" class="img-fluid img-thumbnail">
+                                    </a>
+                                    <figcaption>
+                                        <h4 class="aa-product-title"><a href="#" style="color: aliceblue;">Monster Abra A5 V19.2 15,6"</a></h4>
+
+                                    </figcaption>
+
+                                </figure>
+                                <div class="aa-product-hvr-content">
+                                    <a href="/Product1/ViewDetails/5" title="Detayları Görüntüle" data-toggle="tooltip" data-placement="top"><span class="fa fa-info"></span></a>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <figure>
+                                    <a class="aa-product-img" href="/Product1/ViewDetails/6">
+                                        <img src="/Images/lnv2.png" alt="" class="img-fluid img-thumbnail">
+                                    </a>
+                                    <figcaption>
+                                        <h4 class="aa-product-title"><a href="#" style="color: aliceblue;">LENOVO Legion 5</a></h4>
+
+                                    </figcaption>
+
+                                </figure>
+                                <div class="aa-product-hvr-content">
+
+                                    <a href="/Product1/ViewDetails/6" title="Detayları Görüntüle" data-toggle="tooltip" data-placement="top"><span class="fa fa-info"></span></a>
+                                </div>
+                            </li>
+
+
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+<section id="aa-product-category" style="background-image: url(/Images/dark4.jpg)">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-8 col-md-push-3">
+                <div class="aa-product-catg-content">
+
+                    <div class="aa-product-catg-body">
+                        <ul class="aa-product-catg">
+
+
+
+                            <li>
+                                <figure>
+                                    <a class="aa-product-img" href="/Product1/ViewDetails/15">
+                                        <img src="/Images/tshrt.png" alt="" class="img-fluid img-thumbnail">
+                                    </a>
+                                    <figcaption>
+                                        <h4 class="aa-product-title"><a href="#" style="color: aliceblue;">Comfort Fit Bisiklet Yaka</a></h4>
+
+                                    </figcaption>
+
+                                </figure>
+                                <div class="aa-product-hvr-content">
+                                    <a href="/Product1/ViewDetails/15" title="Detayları Görüntüle" data-toggle="tooltip" data-placement="top"><span class="fa fa-info"></span></a>
+                                </div>
+                            </li>
+
+
+
+                            <li>
+                                <figure>
+                                    <a class="aa-product-img" href="/Product1/ViewDetails/16">
+                                        <img src="/Images/tshrt22.png" alt="" class="img-fluid img-thumbnail">
+                                    </a>
+                                    <figcaption>
+                                        <h4 class="aa-product-title"><a href="#" style="color: aliceblue;">Bordo Regular Fit Polo</a></h4>
+
+                                    </figcaption>
+
+                                </figure>
+                                <div class="aa-product-hvr-content">
+
+                                    <a href="/Product1/ViewDetails/16" title="Detayları Görüntüle" data-toggle="tooltip" data-placement="top"><span class="fa fa-info"></span></a>
+                                </div>
+                            </li>
+
+
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+
